@@ -32,6 +32,6 @@
     border: 1px;
 }
 
-.profile {
+.cart, .profile {
     width: 40px; /* Tamaño ajustado */
 }

@@ -11,7 +11,7 @@ const auth = getAuth(appFirebase)
 
 
 function App() {
-
+  
   // Estado para controlar la visibilidad del componente Login
   const [showRegister, setShowRegister] = useState(false);
   const [showLogin, setShowLogin] = useState(false);
@@ -20,12 +20,12 @@ function App() {
     setShowLogin(!showLogin);
   };
   const handleReturnHomeClick = () => {
-    // Cambiar el estado para mostrar el componente Login
-    setShowLogin(!showLogin);
-    setShowRegister(!showRegister);
+    // Cambiar el estado para mostrar LandingPage
+    setShowLogin(false);
+    setShowRegister(false);
   };
   const handleRegisterClick = () => {
-    // Cambiar el estado para mostrar el componente Login
+    // Cambiar el estado para mostrar el componente Register
     setShowRegister(!showRegister);
   };
 
@@ -57,6 +57,7 @@ function App() {
         <div className="web">
           <Cabecera />
           <Register />
+          <Button onClick={handleReturnHomeClick}> Return Home</Button>
         </div>
       )
     }

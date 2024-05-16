@@ -19,7 +19,6 @@ export const Login =() =>{
         // Cambiar el estado para mostrar el componente Register
         setShowRegister(!showRegister);
     };
-
     if(showRegister == false){
         return (
             <div className="container">

@@ -2,9 +2,6 @@ import React, {useState} from "react"
 import "./Login.css";
 import { Register } from "./Register";
 import { Cabecera } from "./Cabecera";
-import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword } from "firebase/auth";
-
-const auth = getAuth(appFirebase)
 
 export const Login =() =>{
     const [email, setEmail] = useState('');

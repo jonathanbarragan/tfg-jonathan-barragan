@@ -4,7 +4,6 @@ import './App.css';
 import SearchBar from "./Components/SearchBar";
 import { Login } from "./Components/Login";
 import { Cabecera } from "./Components/Cabecera";
-import appFirebase from '../src/FirebaseTFG'
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { Register } from "./Components/Register";
 const auth = getAuth(appFirebase)

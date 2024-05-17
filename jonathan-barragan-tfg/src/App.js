@@ -27,7 +27,7 @@ function App() {
     setShowRegister(!showRegister);
   };
 
-  if (showLogin == false && showRegister == false) {
+  if (showLogin === false && showRegister === false) {
     return (
       <div className="App">
         <div className="home">
@@ -40,7 +40,7 @@ function App() {
       </div>
     );
   } else {
-    if(showLogin == true){
+    if(showLogin === true){
       return (
         <div className="web">
           <Cabecera/>
@@ -50,7 +50,7 @@ function App() {
   
       );
     }
-    if(showRegister == true){
+    if(showRegister === true){
       return(
         <div className="web">
           <Cabecera />

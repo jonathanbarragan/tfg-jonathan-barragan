@@ -24,7 +24,7 @@ export const Register =() =>{
         setShowLogin(!showLogin);
     };
 
-    if (showLogin == false){
+    if (showLogin === false){
         return (
             <div className="container">
                 <h2>Registro</h2>

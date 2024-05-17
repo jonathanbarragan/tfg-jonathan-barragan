@@ -15,7 +15,7 @@ export const Login =() =>{
         // Cambiar el estado para mostrar el componente Register
         setShowRegister(!showRegister);
     };
-    if(showRegister == false){
+    if(showRegister === false){
         return (
             <div className="container">
                 <form onSubmit={handleSubmit} className="card card-body shadow-lg">

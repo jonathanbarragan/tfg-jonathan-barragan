@@ -9,7 +9,7 @@ export const Cabecera =() =>{
         setShowHome(!showHome);
       };
     
-    if(showHome == false){
+    if(showHome === false){
         return(
             <div className="header-container">
                 <Image onClick={handleReturnHomeClick} className="logo-web" src="./Assets/PNG/logo.png" />
